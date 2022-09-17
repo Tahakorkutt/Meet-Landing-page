@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color:#B1B2FF;
+}
+/* header start */
+.header{
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 50px 5px;
+
+}
+.logo {
+    display: flex;
+    align-items: center;
+    color: black;
+    font-size: 30px;
+   
+}
+.logo-circle{
+    display: flex;
+    flex-direction: column;
+    margin-right: 6px;
+}
+.header .logo .circle{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+.header .logo .logo-circle .circle-1{
+    background-color: white;
+    margin-left: 10px;
+}
+.header .logo .logo-circle .circle-2{
+background-color: rgb(255, 240, 240);
+
+}
+/* header fınısh */
+/* <!-- About start --> */
+.about{
+    display: flex;
+    align-items: center;
+    margin: 60px 0px;
+overflow: hidden;
+    justify-content: space-around; /*birbirleri ile ayırmak için bu kullanılır*/
+}
+.about .about-picture{
+
+display: flex; 
+align-items: center;
+}
+.about .about-picture img{
+    width: 100%;
+    margin-left: 50px;
+    max-width: 110px;
+    max-height: 110px;
+    border-radius: 50%;
+    padding: 5px;
+    transition: .3s;
+ /*hareket daha yavaş olması için img olana değer verilmesi gerek*/
+}
+.about .about-picture img:hover{
+transform: translateY(-5px); /*harekete hangi yön de olması gerektiği belirlendi*/
+}
+.about-picture .col-1{
+
+    margin-left: -20px;
+}
+.about-picture .col-6{
+    margin-right: -40px;
+}
+.col-5, .col-2{
+    margin-bottom: 90px;
+}
+.about .about-info{
+    margin: 0 55px;
+}
+.about .about-info h1,p{
+    text-align: center;
+}
+.about .about-info h1 {
+    font-size: 45px;
+    font-weight: 800;
+    line-height: 1.2; /*satır yüksekliği*/
+    letter-spacing: 0.7px; /*harflerin arası açılmak için kullanılır*/
+}
+.about .about-info p{
+    font-size: 14px;
+    letter-spacing: 0.9px;
+    margin-top: 20px;
+    font-weight: 500;
+    color: #2a3757;
+    margin: 0x 0px;
+}
+.about .about-info .btn{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.about .about-info a{
+    text-decoration: none;
+    padding: 13px 35px;
+    display: inline-block;
+    color: white;
+    font-size: 12px;
+    border-radius: 35px;
+    font-weight: bold;
+}
+
+.about .about-info .btn-1{
+    background-color: rgb(76, 76, 221);
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+.about .about-info .btn-2{
+    margin-right: 10px;
+    margin-bottom: 5px;
+    background-color: rgb(111, 111, 235);
+}
+/* <!-- About fınsh --> */
+/* line start */
+.line{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 60px 0;
+    flex-direction: column; /*sütun şeklin de durması için verildi*/
+}
+.line .limit{
+
+    border: 1px solid white;
+    height: 75px;
+}
+.line .line-circle{
+width: 40px;
+height: 40px;
+border: 1px solid white;
+border-radius: 50%;
+color: #777;
+font-weight: bold;
+font-size: 14px;
+line-height: 40px;
+text-align: center;
+
+}
+
+/* line finish*/
+
+/* content start */
+
+.container .content{ /*flex ve row yapısı ile yan yana getirildi*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.container .content img{
+ 
+      width: 100%;
+      max-width: 200px;
+      margin: 10px 5px;
+      border-radius: 13px;
+}
+.container .information{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container .information h4{
+
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-size: 13px;
+    letter-spacing: 1.8px;
+    text-align: center;
+}
+.container .information h2{
+    font-size: 30px;
+    text-align: center;
+    line-height: 1.2;
+    font-weight: bold;
+
+}
+.container .information p{
+
+text-align: center;
+font-size: 14px;
+letter-spacing: 0.9px;
+font-weight: 500;
+margin: 20px 0;
+}
+/* content fınısh */
+/* footer start */
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    height: 300px;
+    
+}
+
+.footer-picture{
+    width: 100%;
+    height: 300px;
+    background-image: url(img/footer2.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.footer-info{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 300px;
+    width: 100%;
+    background-color: #063c4bb2;
+    
+}
+
+.footer-info h4,p{
+    background-color: transparent;
+    color: #fff;
+    
+}
+
+.footer-info h4{
+    font-size: 25px;
+    margin: 10px 70px;
+    letter-spacing: 1.2px;
+}
+.footer-info p{
+    font-size: 14px;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.footer-info a{
+    padding: 15px 35px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    background-color: #887a9c;
+    margin-bottom: 15px;
+    margin-right: 70px;
+    margin-left: 70px;
+    text-align: center;
+    border-radius: 35px;
+    font-size: 12px;
+}
+.footer-info a span{
+    background-color: #887a9c;
+    color: #a0d1df;
+    font-size: 12px;
+}
+/* footer fınısh*/
+@media screen and (max-width: 870px){
+    .footer-info{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        text-align: center;
+    }
+    .about {
+        flex-direction: column;
+
+    }
+    .about .about-info h1{
+        font-size: 35px;
+    }
+    .about .about-info p{
+        font-size: 12px;
+    }
+    .about .picture-1{
+        margin-left: 30px;
+    }
+    .about  .picture-2{
+
+
+        margin: 50px;
+    }
+    .about .about-info a{
+        margin: 15px 0;
+    }
+}
+@media screen and (max-width: 600px){
+
+
+.container .information h2{
+    font-size: 25px;
+
+
+}
+.container p{
+    font-size: 12px;
+}
+}
